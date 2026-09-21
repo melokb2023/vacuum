@@ -6,7 +6,7 @@ import java.util.*;
  */
 public class vacuum {
 
-    // Standard AI State Representation
+    // Standard Represenation of the State in accordance with the problem definition and Artificial Intelligence
     static class State {
         String agentLocation; // "A" or "B"
         boolean isAClean;     // true = Clean, false = Dirty
