@@ -113,6 +113,7 @@ public static class rState {
 
         int nodesExpanded = 0;
 
+        //When the word frontier is not empty, the process of loop will cotinue until it reaches towards the goal state, which is when both rooms are clean. The loop will continue to expand nodes and generate successors until a solution is found or all possibilities are exhausted.
         while (!frontier.isEmpty()) {
             Node current = frontier.poll(); // Take the oldest node from the queue
             nodesExpanded++;
