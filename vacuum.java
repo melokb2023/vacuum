@@ -288,6 +288,7 @@ public static class rState {
         System.out.println("2. Depth-First Search (DFS)");
         System.out.println("3. A* Search (Informed - Bonus Merit)");
         System.out.println("4. Run All Strategies");
+        System.out.println("Pick One of the Options Above (1-4):");
         System.out.print(" Your Choice: ");
         int choice = scanner.nextInt();
 
