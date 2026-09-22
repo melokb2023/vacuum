@@ -132,7 +132,7 @@ public static class rState {
                 }
             }
         }
-        System.out.println("No solution found.");
+        System.out.println("There is no solution found.");
     }
 
     // -------------------------------------------------------------
@@ -177,18 +177,18 @@ public static class rState {
     // Heuristic Function Value for A* Search (Informed Strategy)
     // -------------------------------------------------------------
     private static int calculateHeuristic(rState state) {
-        int dirtyCount = 0;
-        if (!state.isroomAclean) dirtyCount++;
-        if (!state.isroomBclean) dirtyCount++;
+        int dirtyroomQuantCount = 0;
+        if (!state.isroomAclean) dirtyroomQuantCount++;
+        if (!state.isroomBclean) dirtyroomQuantCount++;
 
         int distance = 0;
         // If 1 room is dirty and vacuum is in the clean room, add 1 step to travel
-        if (dirtyCount == 1) {
+        if (dirtyroomQuantCount == 1) {
             if (!state.isroomAclean && state.room.equalsIgnoreCase("Room B")) distance = 1;
             if (!state.isroomBclean && state.room.equalsIgnoreCase("Room A")) distance = 1;
         }
 
-        return dirtyCount + distance;
+        return dirtyroomQuantCount + distance;
     }
 
     // -------------------------------------------------------------
@@ -301,7 +301,7 @@ public static class rState {
                 solveAStar(initialState);
             }
             default -> {
-                System.out.println("Wrong choice. BFS will be solved by default!");
+                System.out.println("Choice chosen outside of the given options. BFS will be solved by default!");
                 solveBFS(initialState);
             }
         }   }
