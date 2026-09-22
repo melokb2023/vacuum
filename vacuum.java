@@ -139,7 +139,7 @@ public static class rState {
     // Step 3: Solving the Problem Using Depth-First Search (DFS)
     // -------------------------------------------------------------
     public static void solveDFS(rState initialState) {
-        System.out.println("\n=== Executing Depth-First Search (DFS) ===");
+        System.out.println("\n=== Depth-First Search (DFS) ===");
         
         Stack<Node> frontier = new Stack<>();
         Set<rState> visited = new HashSet<>();
