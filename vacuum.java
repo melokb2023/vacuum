@@ -290,9 +290,10 @@ public static class rState {
         System.out.println("4. Run All Strategies");
         System.out.println("Pick One of the Options Above (1-4):");
         System.out.print(" Your Choice: ");
-        int choice = scanner.nextInt();
+        int numchoice = scanner.nextInt();
 
-        switch (choice) {
+
+        switch (numchoice) {
             case 1 -> solveBFS(initialState);
             case 2 -> solveDFS(initialState);
             case 3 -> solveAStar(initialState);
