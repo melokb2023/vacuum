@@ -12,7 +12,7 @@ public static class rState {
     boolean isroomAclean; // true means the room is Clean, false is considered Dirty
     boolean isroomBclean; // true means the room is Clean, false is considered Dirty
 
-    //Constructor to initialize room state and vacuum location
+    //Constructor that has been used to initialize room state and vacuum location
     public rState(String room, boolean isroomAclean, boolean isroomBclean) {
         this.room = room;
         this.isroomAclean = isroomAclean;
