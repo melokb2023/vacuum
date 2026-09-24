@@ -254,8 +254,8 @@ public static class rState {
                 System.out.printf("Step %d: Action [%s] -> %s\n", i, node.action, node.state);
             }
         }
-        System.out.printf("\nTotal Actions Taken: %d\n", goalNode.cost);
-        System.out.printf("Total States Expanded: %d\n", nodesExpanded);
+        System.out.printf("\nTotal Times That Actions Were Taken: %d\n", goalNode.cost);
+        System.out.printf("Total Times that States Were Expanded: %d\n", nodesExpanded);
     }
 
     // -------------------------------------------------------------
