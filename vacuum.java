@@ -54,7 +54,7 @@ public static class rState {
     public static class Node {
         rState state;   // Current state of the room and vacuum location
         Node parent;    // A parent node to trace back the path to the initial state
-        String action;  // The actions taken ("Suck", "Move Left", "Move Right", or "Start")
+        String action;  // The actions taken ("Suck", "Move to the Left", "Move to the Right")
         int cost;       // Total step cost from the start node to the current node
 
         //This is used to initialize the node with the current state, parent node, action taken, and cost incurred to reach this node making sure that the rooms are in fact clean
